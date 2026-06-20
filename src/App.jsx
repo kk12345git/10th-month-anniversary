@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import { LanguageGate } from './components/LanguageGate';
+import { CinematicIntro } from './components/CinematicIntro';
 import { AmbientCanvas } from './components/AmbientCanvas';
 import { MusicPlayer } from './components/MusicPlayer';
 import { WelcomeHero } from './components/WelcomeHero';
@@ -18,7 +19,7 @@ import { SecretSurprise } from './components/SecretSurprise';
 import { GrandFinale } from './components/GrandFinale';
 import { AnniversaryCelebration } from './components/AnniversaryCelebration';
 import { Globe, Heart } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const LanguageToggle = () => {
   const { lang, setLang } = useLanguage();
@@ -47,15 +48,26 @@ const LanguageToggle = () => {
 
 const MainContent = () => {
   const { lang, isGateRequired } = useLanguage();
+  const [isIntroComplete, setIsIntroComplete] = useState(false);
 
   return (
     <>
       {/* 1. Language Gate overlays everything if no language is selected */}
       <LanguageGate />
 
-      {/* 2. Main content renders only after a language is chosen */}
-      {!isGateRequired && (
-        <div className="relative min-h-screen text-love-dark">
+      {/* 2. Cinematic Intro Credits plays once language is chosen but intro is not complete */}
+      {!isGateRequired && !isIntroComplete && (
+        <CinematicIntro onComplete={() => setIsIntroComplete(true)} />
+      )}
+
+      {/* 3. Main content renders only after language is chosen and intro completes */}
+      {!isGateRequired && isIntroComplete && (
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.0, ease: 'easeOut' }}
+          className="relative min-h-screen text-love-dark"
+        >
           {/* Ambient Background Canvas (Floating hearts, petals, sparkles, mouse trails) */}
           <AmbientCanvas />
 
@@ -90,7 +102,7 @@ const MainContent = () => {
               Happy 10th Month Anniversary · August 15, 2025 - Present
             </p>
           </footer>
-        </div>
+        </motion.div>
       )}
     </>
   );
