@@ -101,19 +101,19 @@ export const LiveCounter = () => {
           </div>
 
           {/* Time block flex grid */}
-          <div className="grid grid-cols-5 gap-3 md:gap-4 text-center">
+          <div className="grid grid-cols-5 gap-1.5 sm:gap-4 text-center">
             {timeBlocks.map((block, idx) => (
               <div 
                 key={idx} 
-                className="flex flex-col bg-white/40 border border-white/50 rounded-2xl py-4 px-2 md:py-6 shadow-sm justify-between min-w-0"
+                className="flex flex-col bg-white/40 border border-white/50 rounded-xl py-3 px-1 sm:py-6 shadow-sm justify-between min-w-0"
               >
                 {/* Timer Digit */}
-                <div className="font-love-title text-2xl sm:text-4xl md:text-5xl font-bold text-love-dark tracking-tight leading-none mb-2 font-mono">
+                <div className="font-love-title text-lg sm:text-4xl md:text-5xl font-bold text-love-dark tracking-tight leading-none mb-2 font-mono">
                   {block.value}
                 </div>
                 
                 {/* Timer Label */}
-                <div className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider text-love-dark/60 truncate">
+                <div className="text-[9px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider text-love-dark/60 truncate">
                   {block.label}
                 </div>
               </div>

@@ -43,7 +43,7 @@ export const LoveNotes = () => {
         </div>
 
         {/* Scattered Sticky Notes Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto">
           {currentText.notes.map((note, idx) => {
             const colorClass = stickyColors[idx % stickyColors.length];
             const rotation = stickyRotations[idx % stickyRotations.length];
@@ -66,17 +66,17 @@ export const LoveNotes = () => {
                   zIndex: 20,
                   boxShadow: '0 15px 30px -10px rgba(74, 21, 37, 0.2)'
                 }}
-                className={`p-6 rounded-xs border shadow-md relative aspect-square flex items-center justify-center text-center select-none ${colorClass} cursor-default`}
+                className={`p-4 md:p-6 rounded-xs border shadow-md relative aspect-square flex items-center justify-center text-center select-none ${colorClass} cursor-default`}
                 style={{
                   boxShadow: '2px 8px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'
                 }}
               >
                 {/* Washi Tape/Sticky strip decoration */}
-                <div className="absolute -top-3.5 left-1/2 transform -translate-x-1/2 w-20 h-7 bg-white/40 border border-white/20 rotate-1 shadow-xs" 
+                <div className="absolute -top-3.5 left-1/2 transform -translate-x-1/2 w-14 md:w-20 h-7 bg-white/40 border border-white/20 rotate-1 shadow-xs" 
                      style={{ backdropFilter: 'blur(1px)' }} />
 
                 {/* Hand-written text content */}
-                <p className="font-love-signature text-3xl leading-relaxed tracking-wider md:px-2">
+                <p className="font-love-signature text-xl md:text-3xl leading-relaxed tracking-wider md:px-2">
                   {note}
                 </p>
               </motion.div>

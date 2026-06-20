@@ -45,7 +45,7 @@ export const LoveLetter = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="glass-panel rounded-3xl p-8 md:p-12 border-2 border-love-rose/40 relative shadow-xl max-w-3xl mx-auto select-none"
+          className="glass-panel rounded-3xl p-4 md:p-12 border-2 border-love-rose/40 relative shadow-xl max-w-3xl mx-auto select-none"
         >
           {/* Heart corner decorations */}
           <div className="absolute top-4 left-4 text-love-rose/40"><Heart size={16} className="fill-love-rose/20" /></div>
@@ -54,7 +54,7 @@ export const LoveLetter = () => {
           <div className="absolute bottom-4 right-4 text-love-rose/40"><Heart size={16} className="fill-love-rose/20" /></div>
 
           {/* Letter Inner Border */}
-          <div className="border border-dashed border-love-rose/30 rounded-2xl p-6 md:p-10 bg-white/10 relative">
+          <div className="border border-dashed border-love-rose/30 rounded-2xl p-4 md:p-10 bg-white/10 relative">
             
             {/* Conditional Rendering of Letter copy based on Language */}
             {lang === 'en' ? (

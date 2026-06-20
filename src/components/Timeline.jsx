@@ -51,7 +51,7 @@ export const Timeline = () => {
                 }`}
               >
                 {/* 1. Left/Right Spacer for desktop layout */}
-                <div className="w-full md:w-1/2 flex justify-center px-4 md:px-12">
+                <div className="w-full md:w-1/2 flex justify-center pl-16 pr-4 md:px-12">
                   <motion.div
                     initial={{ opacity: 0, x: isEven ? 50 : -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
