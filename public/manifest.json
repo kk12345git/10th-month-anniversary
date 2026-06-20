@@ -1,0 +1,22 @@
+{
+  "short_name": "Our Love Story",
+  "name": "Our 10-Month Love Story & Anniversary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#FFF0F5",
+  "theme_color": "#FFC0CB",
+  "display": "standalone",
+  "orientation": "portrait"
+}
