@@ -17,6 +17,18 @@ export const MusicPlayer = () => {
     const audio = audioRef.current;
     if (!audio) return;
 
+    // Autoplay on mount (since user already interacted by picking a language)
+    const playAudio = () => {
+      audio.play().then(() => {
+        setIsPlaying(true);
+        setShowPrompt(false);
+      }).catch((err) => {
+        console.log("Autoplay on mount deferred: ", err);
+      });
+    };
+    
+    const playTimer = setTimeout(playAudio, 300);
+
     const handleTimeUpdate = () => setCurrentTime(audio.currentTime);
     const handleDurationChange = () => setDuration(audio.duration || 0);
     const handleAudioEnded = () => {
@@ -29,6 +41,7 @@ export const MusicPlayer = () => {
     audio.addEventListener('ended', handleAudioEnded);
 
     return () => {
+      clearTimeout(playTimer);
       audio.removeEventListener('timeupdate', handleTimeUpdate);
       audio.removeEventListener('durationchange', handleDurationChange);
       audio.removeEventListener('ended', handleAudioEnded);

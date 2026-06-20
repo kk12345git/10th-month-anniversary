@@ -55,54 +55,59 @@ const MainContent = () => {
       {/* 1. Language Gate overlays everything if no language is selected */}
       <LanguageGate />
 
-      {/* 2. Cinematic Intro Credits plays once language is chosen but intro is not complete */}
-      {!isGateRequired && !isIntroComplete && (
-        <CinematicIntro onComplete={() => setIsIntroComplete(true)} />
-      )}
-
-      {/* 3. Main content renders only after language is chosen and intro completes */}
-      {!isGateRequired && isIntroComplete && (
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.0, ease: 'easeOut' }}
-          className="relative min-h-screen text-love-dark"
-        >
-          {/* Ambient Background Canvas (Floating hearts, petals, sparkles, mouse trails) */}
+      {/* 2. Main wrapper loads once language is picked */}
+      {!isGateRequired && (
+        <div className="relative min-h-screen text-love-dark">
+          {/* Ambient Background Canvas (active immediately to float behind credits) */}
           <AmbientCanvas />
 
-          {/* Floating UI controls */}
-          <LanguageToggle />
+          {/* Floating Music player (starts audio instantly on language click) */}
           <MusicPlayer />
 
-          {/* 15 Sections */}
-          <WelcomeHero />
-          <Timeline />
-          <Gallery />
-          <VideoMemories />
-          <LoveInNumbers />
-          <ReasonsILoveYou />
-          <LoveLetter />
-          <LiveCounter />
-          <MemoryPolaroids />
-          <LoveNotes />
-          <OpenWhen />
-          <SecretSurprise />
-          <GrandFinale />
-          <AnniversaryCelebration />
+          {/* Cinematic movie intro overlay */}
+          {!isIntroComplete && (
+            <CinematicIntro onComplete={() => setIsIntroComplete(true)} />
+          )}
 
-          {/* Elegant Footer */}
-          <footer className="py-12 bg-love-light text-center border-t border-love-rose/20 relative z-20">
-            <div className="flex items-center justify-center gap-2 text-love-dark/40 font-love-title text-sm tracking-wider">
-              <span>Made with</span>
-              <Heart size={14} className="text-love-rose fill-love-rose" />
-              <span>for My Forever Love</span>
-            </div>
-            <p className="mt-2 text-[10px] text-love-dark/30 tracking-widest uppercase">
-              Happy 10th Month Anniversary · August 15, 2025 - Present
-            </p>
-          </footer>
-        </motion.div>
+          {/* Floating Language Toggle (hidden during credits, visible after) */}
+          {isIntroComplete && <LanguageToggle />}
+
+          {/* 15 Sections - revealed with a slow luxury fade in */}
+          {isIntroComplete && (
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.5, ease: 'easeOut' }}
+            >
+              <WelcomeHero />
+              <Timeline />
+              <Gallery />
+              <VideoMemories />
+              <LoveInNumbers />
+              <ReasonsILoveYou />
+              <LoveLetter />
+              <LiveCounter />
+              <MemoryPolaroids />
+              <LoveNotes />
+              <OpenWhen />
+              <SecretSurprise />
+              <GrandFinale />
+              <AnniversaryCelebration />
+
+              {/* Elegant Footer */}
+              <footer className="py-12 bg-love-light text-center border-t border-love-rose/20 relative z-20">
+                <div className="flex items-center justify-center gap-2 text-love-dark/40 font-love-title text-sm tracking-wider">
+                  <span>Made with</span>
+                  <Heart size={14} className="text-love-rose fill-love-rose" />
+                  <span>for My Forever Love</span>
+                </div>
+                <p className="mt-2 text-[10px] text-love-dark/30 tracking-widest uppercase">
+                  Happy 10th Month Anniversary · August 15, 2025 - Present
+                </p>
+              </footer>
+            </motion.div>
+          )}
+        </div>
       )}
     </>
   );

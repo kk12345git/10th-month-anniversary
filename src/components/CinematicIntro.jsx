@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import { Heart } from 'lucide-react';
 
 export const CinematicIntro = ({ onComplete }) => {
   const { lang } = useLanguage();
@@ -24,15 +25,15 @@ export const CinematicIntro = ({ onComplete }) => {
   useEffect(() => {
     const timer1 = setTimeout(() => {
       setSlideIdx(1);
-    }, 2000);
+    }, 2500);
 
     const timer2 = setTimeout(() => {
       setSlideIdx(2);
-    }, 4000);
+    }, 5000);
 
     const timer3 = setTimeout(() => {
       onComplete();
-    }, 6000);
+    }, 7500);
 
     return () => {
       clearTimeout(timer1);
@@ -42,9 +43,9 @@ export const CinematicIntro = ({ onComplete }) => {
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#1A050D] text-white">
-      {/* Cinematic background particles (very low density sparkles) */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,182,193,0.05),transparent_70%)]" />
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#1A050D]/93 backdrop-blur-xs text-white">
+      {/* Cinematic radial gradient */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,182,193,0.08),transparent_70%)] pointer-events-none" />
       
       <AnimatePresence mode="wait">
         {currentSlides.map((slide, idx) => {
@@ -52,21 +53,32 @@ export const CinematicIntro = ({ onComplete }) => {
           return (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, y: 15, filter: "blur(5px)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              exit={{ opacity: 0, y: -15, filter: "blur(5px)" }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
-              className="text-center px-6 max-w-xl select-none"
+              initial={{ opacity: 0, scale: 0.96, y: 15, filter: "blur(4px)" }}
+              animate={{ 
+                opacity: [0, 1, 1, 0], 
+                scale: [0.96, 1.02, 1.04, 1.08], 
+                y: [15, 0, -5, -15], 
+                filter: ["blur(4px)", "blur(0px)", "blur(0px)", "blur(4px)"]
+              }}
+              transition={{ 
+                duration: 2.5, 
+                times: [0, 0.25, 0.75, 1],
+                ease: "easeInOut" 
+              }}
+              className="text-center px-6 max-w-xl select-none flex flex-col items-center gap-4"
             >
-              <h2 className="font-love-title text-2xl md:text-4xl font-light tracking-widest text-love-rose leading-relaxed drop-shadow-[0_0_8px_rgba(255,182,197,0.3)]">
+              <h2 className="font-love-title text-2xl md:text-4xl font-light tracking-widest text-love-rose leading-relaxed drop-shadow-[0_0_12px_rgba(255,182,197,0.4)]">
                 {slide.text}
               </h2>
-              <motion.div 
-                initial={{ width: 0 }}
-                animate={{ width: "60px" }}
-                transition={{ delay: 0.3, duration: 1.2 }}
-                className="h-0.5 bg-love-rose/40 mx-auto mt-4 rounded-full"
-              />
+              
+              {/* Pulsing golden heart separator */}
+              <motion.div
+                animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.8, 0.3] }}
+                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+                className="text-amber-200 mt-2"
+              >
+                <Heart size={18} className="fill-amber-200" />
+              </motion.div>
             </motion.div>
           );
         })}
