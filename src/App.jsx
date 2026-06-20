@@ -87,7 +87,7 @@ const MainContent = () => {
               <span>for My Forever Love</span>
             </div>
             <p className="mt-2 text-[10px] text-love-dark/30 tracking-widest uppercase">
-              Happy 10th Month Anniversary · June 15, 2026 - Present
+              Happy 10th Month Anniversary · August 15, 2025 - Present
             </p>
           </footer>
         </div>

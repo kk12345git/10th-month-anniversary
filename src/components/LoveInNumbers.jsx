@@ -54,7 +54,7 @@ export const LoveInNumbers = () => {
 
   useEffect(() => {
     const calculateDays = () => {
-      const anniversaryStart = new Date('2026-06-15T00:00:00');
+      const anniversaryStart = new Date('2025-08-15T00:00:00');
       const now = new Date();
       const diffInMs = now.getTime() - anniversaryStart.getTime();
       // Calculate float days, floor it, clamp to min 0

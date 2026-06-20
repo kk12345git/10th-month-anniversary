@@ -18,52 +18,52 @@ export const content = {
       months: [
         {
           title: "Month 1: The Spark",
-          date: "June 15, 2026",
+          date: "August 15, 2025",
           description: "Where it all began. The moment our paths crossed and a beautiful new chapter started in our lives. Every conversation felt like home."
         },
         {
           title: "Month 2: Growing Closer",
-          date: "July 15, 2026",
+          date: "September 15, 2025",
           description: "Late-night calls, endless laughter, and sharing secrets. Realizing how incredibly special and unique our connection is."
         },
         {
           title: "Month 3: Beautiful Dates",
-          date: "August 15, 2026",
+          date: "October 15, 2025",
           description: "Our dates, sweet surprises, and quiet moments. Every second spent with you made me realize I want you in my life forever."
         },
         {
           title: "Month 4: Deep Connection",
-          date: "September 15, 2026",
+          date: "November 15, 2025",
           description: "Facing life's small hurdles together and finding an anchor in each other. Your presence became my ultimate comfort zone."
         },
         {
           title: "Month 5: Halfway to Forever",
-          date: "October 15, 2026",
+          date: "December 15, 2025",
           description: "Five months of beautiful dates and sweet talks. My love for you only grows deeper, stronger, and more resilient every day."
         },
         {
           title: "Month 6: Half a Year of Happiness",
-          date: "November 15, 2026",
+          date: "January 15, 2026",
           description: "Six months of pure joy and absolute devotion. Celebrating half a year of holding hands, making jokes, and sharing dreams."
         },
         {
           title: "Month 7: Comfort & Peace",
-          date: "December 15, 2026",
+          date: "February 15, 2026",
           description: "Through the cold winters, your warm love kept my soul cozy. You've officially become my favorite escape and my home."
         },
         {
           title: "Month 8: Growing Together",
-          date: "January 15, 2027",
+          date: "March 15, 2026",
           description: "Stepping into a new year together. Supporting each other's career, goals, and personal dreams. We are the ultimate dream team."
         },
         {
           title: "Month 9: Unconditional Trust",
-          date: "February 15, 2027",
+          date: "April 15, 2026",
           description: "Nine months of seeing my future in your beautiful eyes. A bond built on trust, respect, and deep emotional alignment."
         },
         {
           title: "Month 10: Our Milestone",
-          date: "March 15, 2027",
+          date: "May 15, 2026",
           description: "Happy 10th Month Anniversary, my beautiful fiancée! We've built so many memories, and yet, this is only the beginning."
         }
       ]
@@ -74,52 +74,52 @@ export const content = {
       months: [
         {
           title: "மாதம் 1: காதல் பொறி",
-          date: "ஜூன் 15, 2026",
+          date: "ஆகஸ்ட் 15, 2025",
           description: "எல்லாம் தொடங்கிய இடம். நமது பாதைகள் ஒன்றிணைந்து, நமது வாழ்க்கையில் ஒரு புதிய அழகான அத்தியாயம் தொடங்கிய தருணம். ஒவ்வொரு உரையாடலும் ஒரு புதிய உணர்வைத் தந்தது."
         },
         {
           title: "மாதம் 2: நெருக்கம் வளர்தல்",
-          date: "ஜூலை 15, 2026",
+          date: "செப்டம்பர் 15, 2025",
           description: "நள்ளிரவுப் பேச்சுகள், முடிவில்லா சிரிப்புகள் மற்றும் இரகசியங்களைப் பகிர்ந்து கொள்ளுதல். நமது பிணைப்பு எவ்வளவு விசேஷமானது மற்றும் தனித்துவமானது என்பதை உணர்ந்த காலம்."
         },
         {
           title: "மாதம் 3: அழகான சந்திப்புகள்",
-          date: "ஆகஸ்ட் 15, 2026",
+          date: "அக்டோபர் 15, 2025",
           description: "இனிமையான சந்திப்புகள் மற்றும் அமைதியான தருணங்கள். உன்னுடன் கழித்த ஒவ்வொரு நொடியும் நீ என் வாழ்க்கையில் என்றென்றும் இருக்க வேண்டும் என்பதை உணர வைத்தது."
         },
         {
           title: "மாதம் 4: ஆழமான இணைப்பு",
-          date: "செப்டம்பர் 15, 2026",
+          date: "நவம்பர் 15, 2025",
           description: "வாழ்க்கையின் சிறிய தடைகளை ஒன்றாக எதிர்கொள்வதும், ஒருவருக்கொருவர் நங்கூரமாக இருப்பதும். உனது முன்னிலையே எனது மிகப்பெரிய ஆறுதலாக மாறியது."
         },
         {
           title: "மாதம் 5: பாதி தூரம்",
-          date: "அக்டோபர் 15, 2026",
+          date: "டிசம்பர் 15, 2025",
           description: "ஐந்து மாத அழகான சந்திப்புகளும் இனிமையான பேச்சுகளும். உன் மீதான என் காதல் நாளுக்கு நாள் ஆழமாகவும், வலுவாகவும், உறுதியாகவும் வளர்ந்து வருகிறது."
         },
         {
           title: "மாதம் 6: அரை வருட மகிழ்ச்சி",
-          date: "நவம்பர் 15, 2026",
+          date: "ஜனவரி 15, 2026",
           description: "ஆறு மாத கால தூய மகிழ்ச்சி மற்றும் அர்ப்பணிப்பு. கைகோர்த்து, வேடிக்கைகள் செய்து, கனவுகளைப் பகிர்ந்து கொண்ட அரை வருடத்தைக் கொண்டாடுகிறோம்."
         },
         {
           title: "மாதம் 7: ஆறுதலும் அமைதியும்",
-          date: "டிசம்பர் 15, 2026",
+          date: "பிப்ரவரி 15, 2026",
           description: "குளிர்காலத்திலும், உனது கதகதப்பான காதல் என் ஆத்மாவை இதமாக வைத்திருந்தது. நீ அதிகாரப்பூர்வமாக எனக்குப் பிடித்த புகலிடமாகவும் என் இல்லமாகவும் மாறிவிட்டாய்."
         },
         {
           title: "மாதம் 8: இணைந்து வளர்தல்",
-          date: "ஜனவரி 15, 2027",
+          date: "மார்ச் 15, 2026",
           description: "புதிய ஆண்டில் ஒன்றாக அடியெடுத்து வைப்பது. ஒருவருக்கொருவர் தொழில், இலக்குகள் மற்றும் தனிப்பட்ட கனவுகளுக்கு ஆதரவளிப்பது. நாம் ஒரு சிறந்த இணை."
         },
         {
           title: "மாதம் 9: நிபந்தனையற்ற நம்பிக்கை",
-          date: "பிப்ரவரி 15, 2027",
+          date: "ஏப்ரல் 15, 2026",
           description: "உன் அழகான கண்களில் எனது எதிர்காலத்தைக் கண்ட ஒன்பது மாதங்கள். நம்பிக்கை, மரியாதை மற்றும் ஆழமான உணர்வு ரீதியான பிணைப்பால் உருவான உறவு."
         },
         {
           title: "மாதம் 10: நமது மைல்கல்",
-          date: "மார்ச் 15, 2027",
+          date: "மே 15, 2026",
           description: "மகிழ்ச்சியான 10வது மாத நிறைவு வாழ்த்துகள், என் அழகான மனைவியே! நாம் பல நினைவுகளை உருவாக்கியுள்ளோம், ஆனால் இது ஒரு ஆரம்பம் மட்டுமே."
         }
       ]
@@ -187,7 +187,7 @@ export const content = {
         { title: "உன் புன்னகை", desc: "அது என் இருண்ட நாட்களை ஒளிரச் செய்து என் இதயத்தை முழு அமைதியாலும் கதகதப்பாலும் நிரப்புகிறது." },
         { title: "உன் அன்பு", desc: "என் மீதும் உன்னைச் சுற்றியுள்ளவர்கள் மீதும் நீ காட்டும் அன்பான, பரிவுமிக்க அக்கறை என் இதயத்தைக் கரைக்கிறது." },
         { title: "உன் ஆதரவு", desc: "நான் என்னை சந்தேகப்படும்போதும் என் கனவுகளை நம்பி, எப்போதும் என் பின்னே உறுதியாக நிற்பது." },
-        { title: "உன் காதல்", desc: "தூய்மையான, நிபந்தனையற்ற, என் வாழ்வில் நான் பெற்ற மிக அழகான ஒரே பரிசு." },
+        { title: "உன் காதல்", desc: "உண்மையான, நிபந்தனையற்ற, என் வாழ்வில் நான் பெற்ற மிக அழகான ஒரே பரிசு." },
         { title: "உன் அக்கறை", desc: "என்னைப்பற்றிய ஒவ்வொரு சிறிய விஷயத்தையும் நினைவில் வைத்து என் மகிழ்ச்சியைக் கவனிப்பது." },
         { title: "நமது நினைவுகள்", desc: "நாம் பகிர்ந்து கொண்ட ஒவ்வொரு சிரிப்பும், பயணித்த ஒவ்வொரு பாதையும் என் ஆத்மாவில் என்றென்றும் பதிந்துள்ளது." }
       ]
@@ -199,28 +199,28 @@ export const content = {
       subtitle: "Words are not enough, but here is a piece of my soul for you",
       letter: `Dearest,
 
-These past 10 months have been the most magical months of my life. From the moment you entered my world on June 15, 2026, you have filled every day with joy, laughter, and a sense of completeness that I never knew existed.
+These past 10 months have been the most magical months of my life. From the moment you entered my world on August 15, 2025, you have filled every day with joy, laughter, and a sense of completeness that I never knew existed.
 
 Thank you for being my anchor, my best friend, and my greatest love. You have stood by me, supported my dreams, and loved me unconditionally. Every smile you share, every laugh we hold, and every quiet moment we spend together is a treasure I will hold close to my heart forever.
 
 As we celebrate this milestone, I want you to know that my love for you has only grown stronger. I promise to cherish you, protect you, and stand by you through every high and low that life brings.
 
 Yours forever and always,
-[Your Name]`
+Karthigeyan`
     },
     ta: {
       title: "என் இதயத்திலிருந்து ஒரு கடிதம்",
       subtitle: "வார்த்தைகள் போதாது, ஆனால் உனக்காக என் ஆன்மாவின் ஒரு பகுதி இங்கே",
       letter: `என் அன்பானவளே,
 
-இந்த கடந்த 10 மாதங்கள் என் வாழ்வின் மிகவும் மாயாஜாலமான காலம். ஜூன் 15, 2026 அன்று நீ என் உலகிற்குள் நுழைந்த நொடியிலிருந்து, இதுவரை நான் அறியாத மகிழ்ச்சியாலும், சிரிப்பாலும், முழுமை உணர்வாலும் ஒவ்வொரு நாளையும் நிரப்பியுள்ளாய்.
+இந்த கடந்த 10 மாதங்கள் என் வாழ்வின் மிகவும் மாயாஜாலமான காலம். ஆகஸ்ட் 15, 2025 அன்று நீ என் உலகிற்குள் நுழைந்த நொடியிலிருந்து, இதுவரை நான் அறியாத மகிழ்ச்சியாலும், சிரிப்பாலும், முழுமை உணர்வாலும் ஒவ்வொரு நாளையும் நிரப்பியுள்ளாய்.
 
 என் நங்கூரமாக, என் சிறந்த நண்பராக, என் மிகப்பெரிய காதலாக இருப்பதற்கு நன்றி. நீ எனக்கு துணையாக நின்று, என் கனவுகளுக்கு ஆதரவளித்து, நிபந்தனையின்றி என்னை நேசித்தாய். நீ காட்டும் ஒவ்வொரு புன்னகையும், நாம் சிரிக்கும் ஒவ்வொரு சிரிப்பும், நாம் ஒன்றாகக் கழிக்கும் ஒவ்வொரு அமைதியான நொடியும் என் இதயத்திற்கு மிக நெருக்கமான பொக்கிஷங்கள்.
 
 இந்த மைல்கல்லை நாம் கொண்டாடும் வேளையில், உன் மீதான என் காதல் இன்னும் வலுவடைந்துள்ளது என்பதை நீ அறிய விரும்புகிறேன். வாழ்க்கை கொண்டு வரும் ஒவ்வொரு இன்ப துன்பங்களிலும் உன்னைப் போற்றிப் பாதுகாக்கவும், உனக்குத் துணையாக நிற்கவும் நான் உறுதியளிக்கிறேன்.
 
 என்றென்றும் உன் அன்புடன்,
-[உங்கள் பெயர்]`
+கார்த்திகேயன்`
     }
   },
   liveCounter: {

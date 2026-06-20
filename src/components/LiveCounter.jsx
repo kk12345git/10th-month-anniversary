@@ -18,7 +18,7 @@ export const LiveCounter = () => {
 
   useEffect(() => {
     const calculateTime = () => {
-      const startDate = new Date('2026-06-15T00:00:00');
+      const startDate = new Date('2025-08-15T00:00:00');
       const now = new Date();
       
       // Clamp to start date if now is somehow earlier
